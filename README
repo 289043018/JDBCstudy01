@@ -25,3 +25,14 @@ values
 
 insert into tbl_address(city , country , user_id)
 values ('tianjin','chain',2),('beijing','chian',1);
+
+
+com.hand.JDBCstudy01包是在创建项目时自动创建的，无有用代码
+com.hand.JDBCTest包内的文件是实现了硬编码的JDBC编程
+
+dbconfig.properties文件为配置信息文件
+ConnectionFactory.java用于获取配置文件的信息
+ConnectionFactoryTest.java用于验证配置信息是否读取正确
+com.hand.Entity包内的文件，作用是获得对象的属性
+UserDao.java文件是用户接口
+UserDaoImpl.java文件是用户接口的具体实现
