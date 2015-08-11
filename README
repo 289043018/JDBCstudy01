@@ -1,0 +1,27 @@
+数据库创建语句：
+create table tbl_user(
+id int(11) unsigned not null auto_increment,
+name varchar(50) not null default '',
+passwork varchar(50) not null default '',
+email varchar(50) default '',
+primary key(id))
+engine = InnoDB
+default charset = utf8;
+
+create table tbl_address(
+id int(11) unsigned not null auto_increment,
+city varchar(20) default null,
+country varchar(20) default null,
+user_id int(11) unsigned not null,
+primary key(id))
+engine = InnoDB
+default charset = utf8;
+
+添加数据：
+insert into tbl_user(id, name, password, email)
+values
+(1,'xiaoming','123456','xiaoming@gmail.com'),
+(2,'xiaozhang','123456','xiaozhang@gmail.com');
+
+insert into tbl_address(city , country , user_id)
+values ('tianjin','chain',2),('beijing','chian',1);
